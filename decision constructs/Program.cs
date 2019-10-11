@@ -41,7 +41,7 @@ namespace decision_constructs
                             powerCable();
                             printerCable();
                             printerSoftware();
-                            Console.WriteLine("---------------------------------------------------------------------------------");
+                            Console.WriteLine("---------------------------------------------");
                         }
                         if (prints == 0 && flashingLight == 0 && printerRecognized == 1)
                         {
@@ -51,7 +51,7 @@ namespace decision_constructs
                             Console.WriteLine("...Printer Recognized by Computer: YES");
                             Console.WriteLine("Actions to Take:");
                             paper();
-                            Console.WriteLine("----------------------------------------------------------------------------------");
+                            Console.WriteLine("---------------------------------------------");
                         }
                         if (prints == 0 && flashingLight == 1 && printerRecognized == 1)
                         {
@@ -62,7 +62,7 @@ namespace decision_constructs
                             Console.WriteLine("Actions to Take:");
                             ink();
                             paper();
-                            Console.WriteLine("-----------------------------------------------------------------------------------");
+                            Console.WriteLine("---------------------------------------------");
                         }
                         if (prints == 1 && flashingLight == 1 && printerRecognized == 1)
                         {
@@ -72,7 +72,7 @@ namespace decision_constructs
                             Console.WriteLine("Printer Recognized by Computer: YES");
                             Console.WriteLine("Actions to Take:");
                             ink();
-                            Console.WriteLine("------------------------------------------------------------------------------------");
+                            Console.WriteLine("---------------------------------------------");
                         }
                         if (prints == 1 && flashingLight == 0 && printerRecognized == 0)
                         {
@@ -82,7 +82,7 @@ namespace decision_constructs
                             Console.WriteLine("Printer Recognized by Computer: NO");
                             Console.WriteLine("Actions to Take:");
                             printerSoftware();
-                            Console.WriteLine("-------------------------------------------------------------------------------------");
+                            Console.WriteLine("---------------------------------------------");
                         }
                         if (prints == 1 && flashingLight == 1 && printerRecognized == 0)
                         {
@@ -92,7 +92,7 @@ namespace decision_constructs
                             Console.WriteLine("Printer Recognized by Computer: NO");
                             Console.WriteLine("Actions to Take:");
                             printerSoftware();
-                            Console.WriteLine("--------------------------------------------------------------------------------------");
+                            Console.WriteLine("---------------------------------------------");
                         }
                         if (prints == 1 && flashingLight == 0 && printerRecognized == 1)
                         {
@@ -102,7 +102,7 @@ namespace decision_constructs
                             Console.WriteLine("Printer Recognized by Computer: YES");
                             Console.WriteLine("Actions to Take:");
                             Console.WriteLine("*** No action needed!");
-                            Console.WriteLine("---------------------------------------------------------------------------------------");
+                            Console.WriteLine("---------------------------------------------");
                         }
                         if (prints == 0 && flashingLight == 1 && printerRecognized == 0)
                         {
@@ -114,7 +114,7 @@ namespace decision_constructs
                             printerCable();
                             printerSoftware();
                             ink();
-                            Console.WriteLine("----------------------------------------------------------------------------------------");
+                            Console.WriteLine("---------------------------------------------");
                             Console.WriteLine();
                         }
                     }
@@ -140,7 +140,7 @@ namespace decision_constructs
                         powerCable();
                         printerCable();
                         printerSoftware();
-                        Console.WriteLine("----------------------------------------------------------------------------------------");
+                        Console.WriteLine("-------------------------------------------------");
                         Console.WriteLine();
                         break;
                     case 1:
@@ -150,7 +150,7 @@ namespace decision_constructs
                         Console.WriteLine("...Printer Recognized by Computer: YES");
                         Console.WriteLine("Actions to Take:");
                         paper();
-                        Console.WriteLine("----------------------------------------------------------------------------------------");
+                        Console.WriteLine("-------------------------------------------------");
                         Console.WriteLine();
                         break;
                     case 2:
@@ -162,7 +162,7 @@ namespace decision_constructs
                         printerCable();
                         printerSoftware();
                         ink();
-                        Console.WriteLine("----------------------------------------------------------------------------------------");
+                        Console.WriteLine("-------------------------------------------------");
                         Console.WriteLine();
                         break;
                     case 3:
@@ -173,7 +173,7 @@ namespace decision_constructs
                         Console.WriteLine("Actions to Take:");
                         ink();
                         paper();
-                        Console.WriteLine("----------------------------------------------------------------------------------------");
+                        Console.WriteLine("-------------------------------------------------");
                         Console.WriteLine();
                         break;
                     case 4:
@@ -183,7 +183,7 @@ namespace decision_constructs
                         Console.WriteLine("Printer Recognized by Computer: NO");
                         Console.WriteLine("Actions to Take:");
                         printerSoftware();
-                        Console.WriteLine("----------------------------------------------------------------------------------------");
+                        Console.WriteLine("-------------------------------------------------");
                         Console.WriteLine();
                         break;
                     case 5:
@@ -193,7 +193,7 @@ namespace decision_constructs
                         Console.WriteLine("Printer Recognized by Computer: YES");
                         Console.WriteLine("Actions to Take:");
                         Console.WriteLine("*** No action needed!");
-                        Console.WriteLine("----------------------------------------------------------------------------------------");
+                        Console.WriteLine("-------------------------------------------------");
                         Console.WriteLine();
                         break;
                     case 6:
@@ -203,7 +203,7 @@ namespace decision_constructs
                         Console.WriteLine("Printer Recognized by Computer: NO");
                         Console.WriteLine("Actions to Take:");
                         printerSoftware();
-                        Console.WriteLine("----------------------------------------------------------------------------------------");
+                        Console.WriteLine("-------------------------------------------------");
                         Console.WriteLine();
                         break;
                     case 7:
@@ -213,7 +213,7 @@ namespace decision_constructs
                         Console.WriteLine("Printer Recognized by Computer: YES");
                         Console.WriteLine("Actions to Take:");
                         ink();
-                        Console.WriteLine("----------------------------------------------------------------------------------------");
+                        Console.WriteLine("-------------------------------------------------");
                         Console.WriteLine();
                         break;
                 }
@@ -223,23 +223,23 @@ namespace decision_constructs
         /* methods to call in the logic code of main() */
         static void powerCable()
         {
-            Console.WriteLine("*** Check the Power Cable ");
+            Console.WriteLine("*** Check the Power Cable.");
         }
         static void printerCable()
         {
-            Console.WriteLine("*** Check the Printer Cable ");
+            Console.WriteLine("*** Check the Printer Cable.");
         }
         static void printerSoftware()
         {
-            Console.WriteLine("*** Check that Printer Software is Installed Correctly ");
+            Console.WriteLine("*** Check that Printer Software is Installed.");
         }
         static void ink()
         {
-            Console.WriteLine("*** Check/Replace Ink ***");
+            Console.WriteLine("*** Check/Replace Ink.");
         }
         static void paper()
         {
-            Console.WriteLine("*** Check for Paper Jam ");
+            Console.WriteLine("*** Check for Paper Jam.");
         }
     }
 }
