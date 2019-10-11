@@ -27,94 +27,104 @@ namespace decision_constructs
             {
                 for (int flashingLight = 0; flashingLight < 2; flashingLight++)
                 {
-                    for (int printerRecognized = 0; printerRecognized < 2; printerRecognized++)
+                    for (int printerRecognized = 0; printerRecognized < 2; 
+                             printerRecognized++)
                     {
-                        /* below is the decision constructs to determine the action needed */
-                        if (prints == 0 && flashingLight == 0 && printerRecognized == 0) 
+                        /* below is the decision constructs to determine the 
+                         * action needed */
+                        if (prints == 0 && flashingLight == 0 && 
+                            printerRecognized == 0) 
                         {
                             Console.WriteLine("Conditions:");
                             Console.WriteLine("...Printer prints: NO");
                             Console.WriteLine("...Red Light Flashing: NO"); 
-                            Console.WriteLine("...Printer Recognized by Computer: NO");
+                            Console.WriteLine("...Printer Recognized: NO");
                             Console.WriteLine();
                             Console.WriteLine("Actions to Take:");
                             powerCable();
                             printerCable();
                             printerSoftware();
-                            Console.WriteLine("---------------------------------------------");
+                            Console.WriteLine("-----------------------------");
                         }
-                        if (prints == 0 && flashingLight == 0 && printerRecognized == 1)
+                        if (prints == 0 && flashingLight == 0 && 
+                            printerRecognized == 1)
                         {
                             Console.WriteLine("Conditions:");
                             Console.WriteLine("...Printer prints: NO"); 
                             Console.WriteLine("...Red Light Flashing: NO"); 
-                            Console.WriteLine("...Printer Recognized by Computer: YES");
+                            Console.WriteLine("...Printer Recognized: YES");
                             Console.WriteLine("Actions to Take:");
                             paper();
-                            Console.WriteLine("---------------------------------------------");
+                            Console.WriteLine("-----------------------------");
                         }
-                        if (prints == 0 && flashingLight == 1 && printerRecognized == 1)
+                        if (prints == 0 && flashingLight == 1 && 
+                            printerRecognized == 1)
                         {
                             Console.WriteLine("Conditions:");
                             Console.WriteLine("Printer prints: NO"); 
                             Console.WriteLine("Red Light Flashing: YES"); 
-                            Console.WriteLine("Printer Recognized by Computer: YES");
+                            Console.WriteLine("Printer Recognized: YES");
                             Console.WriteLine("Actions to Take:");
                             ink();
                             paper();
-                            Console.WriteLine("---------------------------------------------");
+                            Console.WriteLine("-----------------------------");
                         }
-                        if (prints == 1 && flashingLight == 1 && printerRecognized == 1)
+                        if (prints == 1 && flashingLight == 1 && 
+                            printerRecognized == 1)
                         {
                             Console.WriteLine("Conditions:");
                             Console.WriteLine("Printer prints: YES"); 
                             Console.WriteLine("Red Light Flashing: YES"); 
-                            Console.WriteLine("Printer Recognized by Computer: YES");
+                            Console.WriteLine("Printer Recognized: YES");
                             Console.WriteLine("Actions to Take:");
                             ink();
-                            Console.WriteLine("---------------------------------------------");
+                            Console.WriteLine("-----------------------------");
                         }
-                        if (prints == 1 && flashingLight == 0 && printerRecognized == 0)
+                        if (prints == 1 && flashingLight == 0 && 
+                            printerRecognized == 0)
                         {
                             Console.WriteLine("Conditions:");
                             Console.WriteLine("Printer prints: YES"); 
                             Console.WriteLine("Red Light Flashing: NO"); 
-                            Console.WriteLine("Printer Recognized by Computer: NO");
+                            Console.WriteLine("Printer Recognized: NO");
                             Console.WriteLine("Actions to Take:");
                             printerSoftware();
-                            Console.WriteLine("---------------------------------------------");
+                            Console.WriteLine("-----------------------------");
                         }
-                        if (prints == 1 && flashingLight == 1 && printerRecognized == 0)
+                        if (prints == 1 && flashingLight == 1 && 
+                            printerRecognized == 0)
                         {
                             Console.WriteLine("Conditions:");
                             Console.WriteLine("Printer prints: YES"); 
                             Console.WriteLine("Red Light Flashing: YES"); 
-                            Console.WriteLine("Printer Recognized by Computer: NO");
+                            Console.WriteLine("Printer Recognized: NO");
                             Console.WriteLine("Actions to Take:");
                             printerSoftware();
-                            Console.WriteLine("---------------------------------------------");
+                            Console.WriteLine("-----------------------------");
                         }
-                        if (prints == 1 && flashingLight == 0 && printerRecognized == 1)
+                        if (prints == 1 && flashingLight == 0 && 
+                            printerRecognized == 1)
                         {
                             Console.WriteLine("Conditions:");
                             Console.WriteLine("Printer prints: YES"); 
                             Console.WriteLine("Red Light Flashing: NO"); 
-                            Console.WriteLine("Printer Recognized by Computer: YES");
+                            Console.WriteLine("Printer Recognized: YES");
                             Console.WriteLine("Actions to Take:");
                             Console.WriteLine("*** No action needed!");
-                            Console.WriteLine("---------------------------------------------");
+                            Console.WriteLine("-----------------------------");
                         }
-                        if (prints == 0 && flashingLight == 1 && printerRecognized == 0)
+                        if (prints == 0 && flashingLight == 1 && 
+                            printerRecognized == 0)
                         {
                             Console.WriteLine("Conditions:");
                             Console.WriteLine("Printer prints: NO"); 
                             Console.WriteLine("Red Light Flashing: YES"); 
-                            Console.WriteLine("Printer Recognized by Computer: NO");
+                            Console.WriteLine("Printer Recognized: NO");
                             Console.WriteLine("Actions to Take:");
                             printerCable();
                             printerSoftware();
                             ink();
-                            Console.WriteLine("---------------------------------------------");
+                            Console.WriteLine("-----------------------------");
                             Console.WriteLine();
                         }
                     }
@@ -134,86 +144,86 @@ namespace decision_constructs
                         Console.WriteLine("Conditions:");
                         Console.WriteLine("...Printer prints: NO");
                         Console.WriteLine("...Red Light Flashing: NO"); 
-                        Console.WriteLine("...Printer Recognized by Computer: NO");
+                        Console.WriteLine("...Printer Recognized: NO");
                         Console.WriteLine();
                         Console.WriteLine("Actions to Take:");
                         powerCable();
                         printerCable();
                         printerSoftware();
-                        Console.WriteLine("-------------------------------------------------");
+                        Console.WriteLine("---------------------------------");
                         Console.WriteLine();
                         break;
                     case 1:
                         Console.WriteLine("Conditions:");
                         Console.WriteLine("...Printer prints: NO"); 
                         Console.WriteLine("...Red Light Flashing: NO"); 
-                        Console.WriteLine("...Printer Recognized by Computer: YES");
+                        Console.WriteLine("...Printer Recognized: YES");
                         Console.WriteLine("Actions to Take:");
                         paper();
-                        Console.WriteLine("-------------------------------------------------");
+                        Console.WriteLine("---------------------------------");
                         Console.WriteLine();
                         break;
                     case 2:
                         Console.WriteLine("Conditions:");
                         Console.WriteLine("Printer prints: NO"); 
                         Console.WriteLine("Red Light Flashing: YES"); 
-                        Console.WriteLine("Printer Recognized by Computer: NO");
+                        Console.WriteLine("Printer Recognized: NO");
                         Console.WriteLine("Actions to Take:");
                         printerCable();
                         printerSoftware();
                         ink();
-                        Console.WriteLine("-------------------------------------------------");
+                        Console.WriteLine("---------------------------------");
                         Console.WriteLine();
                         break;
                     case 3:
                         Console.WriteLine("Conditions:");
                         Console.WriteLine("Printer prints: NO"); 
                         Console.WriteLine("Red Light Flashing: YES"); 
-                        Console.WriteLine("Printer Recognized by Computer: YES");
+                        Console.WriteLine("Printer Recognized: YES");
                         Console.WriteLine("Actions to Take:");
                         ink();
                         paper();
-                        Console.WriteLine("-------------------------------------------------");
+                        Console.WriteLine("---------------------------------");
                         Console.WriteLine();
                         break;
                     case 4:
                         Console.WriteLine("Conditions:");
                         Console.WriteLine("Printer prints: YES"); 
                         Console.WriteLine("Red Light Flashing: NO"); 
-                        Console.WriteLine("Printer Recognized by Computer: NO");
+                        Console.WriteLine("Printer Recognized: NO");
                         Console.WriteLine("Actions to Take:");
                         printerSoftware();
-                        Console.WriteLine("-------------------------------------------------");
+                        Console.WriteLine("---------------------------------");
                         Console.WriteLine();
                         break;
                     case 5:
                         Console.WriteLine("Conditions:");
                         Console.WriteLine("Printer prints: YES"); 
                         Console.WriteLine("Red Light Flashing: NO"); 
-                        Console.WriteLine("Printer Recognized by Computer: YES");
+                        Console.WriteLine("Printer Recognized: YES");
                         Console.WriteLine("Actions to Take:");
-                        Console.WriteLine("*** No action needed!");
-                        Console.WriteLine("-------------------------------------------------");
+                        Console.WriteLine("*No action needed!");
+                        Console.WriteLine("---------------------------------");
                         Console.WriteLine();
                         break;
                     case 6:
                         Console.WriteLine("Conditions:");
                         Console.WriteLine("Printer prints: YES"); 
                         Console.WriteLine("Red Light Flashing: YES"); 
-                        Console.WriteLine("Printer Recognized by Computer: NO");
+                        Console.WriteLine("Printer Recognized: NO");
                         Console.WriteLine("Actions to Take:");
                         printerSoftware();
-                        Console.WriteLine("-------------------------------------------------");
+                        Console.WriteLine("---------------------------------");
                         Console.WriteLine();
                         break;
                     case 7:
                         Console.WriteLine("Conditions:");
                         Console.WriteLine("Printer prints: YES"); 
                         Console.WriteLine("Red Light Flashing: YES"); 
-                        Console.WriteLine("Printer Recognized by Computer: YES");
+                        Console.WriteLine("Printer Recognized: YES");
                         Console.WriteLine("Actions to Take:");
                         ink();
-                        Console.WriteLine("-------------------------------------------------");
+                        Console.WriteLine("---------------------------------");
                         Console.WriteLine();
                         break;
                 }
@@ -223,23 +233,23 @@ namespace decision_constructs
         /* methods to call in the logic code of main() */
         static void powerCable()
         {
-            Console.WriteLine("*** Check the Power Cable.");
+            Console.WriteLine("*Check the Power Cable.");
         }
         static void printerCable()
         {
-            Console.WriteLine("*** Check the Printer Cable.");
+            Console.WriteLine("*Check the Printer Cable.");
         }
         static void printerSoftware()
         {
-            Console.WriteLine("*** Check that Printer Software is Installed.");
+            Console.WriteLine("*Check that Printer Software is Installed.");
         }
         static void ink()
         {
-            Console.WriteLine("*** Check/Replace Ink.");
+            Console.WriteLine("*Check/Replace Ink.");
         }
         static void paper()
         {
-            Console.WriteLine("*** Check for Paper Jam.");
+            Console.WriteLine("**Check for Paper Jam.");
         }
     }
 }
